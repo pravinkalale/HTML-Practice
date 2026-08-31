@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application_form</title>
+</head>
+<body bgcolor="lightblue">
+    <marquee behavior="scroll" direction="right" bgcolor="orange">Job_opening</marquee>
+    <form>
+        <fieldset style="20%" margin="auto">
+        
+        <!--application form-->
+        <center><legend>Application Form</legend></center>
+
+        <h3>Personal Details</h3>
+
+        <!--full name-->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+        <br><br>
+        
+        <!--email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" placehoder="Enter your email" required>
+        <br><br>
+
+        <!--mobile number-->
+        <label for="contact">Mobile Number:</label>
+        <input type="tel" id="contact" name="Mobile Number" placeholder="Enter your mobile number" required>
+        <br><br>
+
+        <!--date of birth-->
+        <label for="DOB">Date_Of_Birth:</label>
+        <input type="date" name="DOB" id="DOB">
+        <br><br>
+
+        <!--gender-->
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">female</label>
+
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">other</label>
+
+        <br><br>
+
+        <!--Education-->
+        <h3>Education</h3>
+        
+        <label for="education">Education:</label>
+        <select name="education" id="education">
+            <option value="">select education</option>
+            <option value="BCA">BCA</option>
+            <option value="Bsc">Bsc</option>
+            <option value="BTech">BTech</option>
+            <option value="MCA">MCA</option>
+            <option value="Msc">Msc</option>
+            <option value="other">other</option>
+        </select>
+        <br><br>
+
+        <!--passing year-->
+        <label for="year">Passing year:</label>
+        <input type="number" name="passing_year" id="year">
+        <br><br>
+        
+        <!--percentage-->
+        <label for="percentage">Percentage/CGPA:</label>
+        <input type="text" id="pecentage">
+        <br><br>
+
+        <h3>Job Details</h3>
+        <!--job details-->
+        <label for="position">Position Applying For:</label>
+        <select name="position" id="position">
+            <option value="Python Developer">Python Developer</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Data Analyst">Data Analyst</option>
+        </select>
+        <br><br>
+
+        <!--experience-->
+        <label>Experience:</label>
+
+        <input type="radio" name="fresher" id="fresher">
+        <label for="fresher">Fresher</label>
+
+        <input type="radio" name="1-2 year" id="1-2 year">
+        <label for="1-2 year">1-2 Years</label>
+
+        <input type="radio" name="3+ years" id="3+ years">
+        <label for="3+ years">3+ Years</label>
+        <br><br>
+
+        <!--skills-->
+        <h3>Skills</h3>
+
+        <label>Skills:</label>
+
+        <input type="checkbox" id="html" valu="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" valu="css">
+        <label for="css">CSS</label>
+
+          <input type="checkbox" id="html" valu="html">
+        <label for="html">HTML</label>
+
+          <input type="checkbox" id="html" valu="html">
+        <label for="html">HTML</label>
+
+          <input type="checkbox" id="html" valu="html">
+        <label for="html">HTML</label>
+
+        </fieldset>
+    </form>
+</body>
+</html>
