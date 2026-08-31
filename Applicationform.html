@@ -17,12 +17,12 @@
 
         <!--full name-->
         <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
         <br><br>
         
         <!--email-->
         <label for="email">Email:</label>
-        <input type="email" id="email" placehoder="Enter your email" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
         <br><br>
 
         <!--mobile number-->
@@ -39,7 +39,7 @@
         <label>Gender:</label>
 
         <input type="radio" name="gender" id="male" value="male">
-        <label for="male">male</label>
+        <label for="male" required >male</label>
 
         <input type="radio" name="gender" id="female" value="female">
         <label for="female">female</label>
@@ -71,13 +71,14 @@
         
         <!--percentage-->
         <label for="percentage">Percentage/CGPA:</label>
-        <input type="text" id="pecentage">
+        <input type="text" id="percentage" name="percentage">
         <br><br>
 
         <h3>Job Details</h3>
         <!--job details-->
         <label for="position">Position Applying For:</label>
         <select name="position" id="position">
+            <option value="Select Position">Select Position</option>
             <option value="Python Developer">Python Developer</option>
             <option value="Web Developer">Web Developer</option>
             <option value="Software Engineer">Software Engineer</option>
@@ -88,13 +89,13 @@
         <!--experience-->
         <label>Experience:</label>
 
-        <input type="radio" name="fresher" id="fresher">
+        <input type="radio" name="experience" id="fresher">
         <label for="fresher">Fresher</label>
 
-        <input type="radio" name="1-2 year" id="1-2 year">
+        <input type="radio" name="experience" id="1-2 year">
         <label for="1-2 year">1-2 Years</label>
 
-        <input type="radio" name="3+ years" id="3+ years">
+        <input type="radio" name="experience" id="3+ years">
         <label for="3+ years">3+ Years</label>
         <br><br>
 
@@ -103,21 +104,51 @@
 
         <label>Skills:</label>
 
-        <input type="checkbox" id="html" valu="html">
+        <input type="checkbox" id="html" name="skills" value="html">
         <label for="html">HTML</label>
 
         <input type="checkbox" id="css" valu="css">
         <label for="css">CSS</label>
 
-          <input type="checkbox" id="html" valu="html">
-        <label for="html">HTML</label>
+        <input type="checkbox" id="javascript" valu="javascript">
+        <label for="javascript">JavaScript</label>
 
-          <input type="checkbox" id="html" valu="html">
-        <label for="html">HTML</label>
+        <input type="checkbox" id="python" valu="python">
+        <label for="python">Python</label>
 
-          <input type="checkbox" id="html" valu="html">
-        <label for="html">HTML</label>
+        <input type="checkbox" id="sql" valu="sql">
+        <label for="sql">SQL</label>
+        <br><br>
 
+        <!--Other info-->
+
+        <h3>Other Information</h3>
+        <label for="resume">Resume upload:</label>
+        <br>
+        <input type="file" id="resume" name="resume">
+        
+        <br><br>
+
+        <label for="address">Address:</label>
+        <br>
+        <textarea name="address" id="address" rows="4" cols="40" placeholder="Enter your Address"></textarea>
+        <br><br>
+
+        <label for="hire">Why should we hire you?</label>
+        <br>
+        <textarea name="hire" id="hire" rows="5" cols="40"></textarea>
+        <br><br>
+
+        <!--declaration-->
+        <input type="checkbox"  id="declaration" required>
+        <label for="declaration">I confirm that information provided above is correct. </label>
+        <br><br>
+
+        <!--submil-->
+        <input type="submit" value="Apply">
+        <input type="reset" value="Reset">
+
+        
         </fieldset>
     </form>
 </body>
