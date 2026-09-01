@@ -1,0 +1,55 @@
+#submit_btn
+{
+    background-color: green;
+    color: white;
+}
+
+#reset_btn
+{
+    background-color: green;
+    color: white;
+}
+
+.required{
+    color: red;
+}
+
+fieldset{
+    width: 50%;
+    margin: auto;
+}
+
+body
+{
+    background-color: lightblue;
+}
+
+h1
+{
+    color: brown;
+}
+
+h3
+{
+    color: darkblue;
+}
+
+/* universal selector */
+
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*h1,h3
+{
+    text-align: center;
+}*/
+
+
+#pmk
+{
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
