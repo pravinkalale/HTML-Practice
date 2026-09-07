@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blend mode</title>
+    <style>
+        #div1{
+            width: 400px;
+            height: 400px;
+            background-color: lightpink;
+            background-image: url(wallpaper.jpg);
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        .container{
+            position: relative;
+            width: 25%;
+            height: 25%;
+        }
+        .overlay{
+            position: absolute;
+            transition: 0.5s ease;
+            height: 300px;
+            width: 300px;
+            top: 0;
+            background-color: darkred;
+            opacity: 0;
+        }
+        .container:hover .overlay{
+            opacity: 0.9;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div1"></div><br>
+    <div class="container">
+        <img src="image1.jpg" alt="">
+        <div class="overlay"></div>
+    </div>
+
+</body>
+</html>
