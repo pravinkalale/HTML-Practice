@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+
+        .container{
+            position: relative;
+            width: 25%;
+            height: 25%;
+        
+        }
+
+        .overlay{
+            position: absolute;
+            transition: 0.5s ease;
+            height: 300px;
+            width: 300px;
+            top: 0;
+            background-image: url(wallpaper.jpg);
+            background-size: cover;
+            opacity: 0;
+        }
+
+        .container:hover .overlay{
+            opacity: 0.9;
+        }
+        p{
+            text-align: justify;
+        }
+        #abc
+        {
+            columns: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="picture.jpg" alt="">
+        <div class="overlay"></div><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique, fuga quod, quis quasi molestiae qui cum, dicta reiciendis laudantium reprehenderit accusantium quia adipisci odit hic quo excepturi dolor placeat?</p><br>
+
+        <p id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate molestias molestiae, possimus eos, eius placeat accusamus facilis consectetur sint eveniet illo exercitationem asperiores laudantium atque. Eveniet, libero sint! Rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ducimus dignissimos sint ratione ipsum voluptatibus exercitationem? Sit iusto quae dolorum eligendi atque minus dicta sunt nostrum! Odio voluptatibus quaerat at.</p>
+    </div>
+</body>
+</html>
