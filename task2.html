@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text align</title>
+    <style>
+        h2
+        {
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            columns: 3;
+            column-gap: 30px;
+            column-rule: 2px solid black;
+        }
+        #abc{
+            height: 30px;
+            width: 80px;
+            float: right;
+            background-color: darkcyan;
+            color: white;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            animation: tiku 5s infinite;
+        }
+        @keyframes tiku {
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>hii i'm pravin </h2><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, assumenda, necessitatibus voluptatibus nobis ratione fuga, ad id quia dolorum quos nemo. Autem, et consequatur similique ducimus at ea incidunt quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente quod tenetur hic inventore, tempora sed harum eos impedit nam iure vero. Rem ipsum quia illo perspiciatis blanditiis, expedita laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum praesentium quasi iste ipsam cumque architecto doloremque tempora voluptas id voluptate accusamus, pariatur vel temporibus. Quod est ipsam architecto consequatur fuga? </p><br>
+    <button id="abc">Submit</button>
+    <div class="box"></div>
+</body>
+</html>
